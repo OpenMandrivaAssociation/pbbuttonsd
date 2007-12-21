@@ -13,6 +13,7 @@ Patch0:	 pbbuttonsd-0.6.7-haldaemon.patch.bz2
 Patch2:  pbbuttonsd_laptopmode_supermount.patch.bz2
 URL: http://pbbuttons.sourceforge.net/
 Group: System/Configuration/Hardware
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libalsa-devel glib2-devel
 ExclusiveArch: ppc
 License: GPL
