@@ -33,7 +33,7 @@ Requires:	%{name} = %{version}
 pbbuttonsd header files for pbbuttonsd development and client support.
 
 %prep
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %setup -q -n %{name}-%{real_ver}
 # (sb) skip backup files or it tried to install them
 %patch0 -p1
@@ -51,7 +51,7 @@ chmod +x scripts/{scripts,event}.d/hal
 install -c -D -m755 %{SOURCE1} %buildroot%{_initrddir}/pbbuttonsd
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post
 %_post_service pbbuttonsd
