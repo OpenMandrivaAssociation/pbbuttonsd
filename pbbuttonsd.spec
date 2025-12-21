@@ -14,6 +14,11 @@ Patch2:  pbbuttonsd_laptopmode_supermount.patch.bz2
 URL: https://pbbuttons.sourceforge.net/
 Group: System/Configuration/Hardware
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: libalsa-devel glib2-devel
 ExclusiveArch: ppc
 License: GPL
