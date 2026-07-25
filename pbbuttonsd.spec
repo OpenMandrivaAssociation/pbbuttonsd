@@ -1,6 +1,6 @@
 %define name pbbuttonsd
 %define version 0.7.4
-%define release %mkrel 2
+%define release 3
 %define real_ver 0.7.4
 
 Name: %{name}
